@@ -1,6 +1,6 @@
 # AWS Automated Security Tools
 
-![프로젝트 로고](https://example.com/path/to/logo.png)
+![프로젝트 로고]([https://example.com/path/to/logo.png](https://static.ebs.co.kr/images/public/lectures/2021/05/20/15/60043164/aa2f5a7b-e23e-4d3d-a5b6-610fcfe17469_thumb_8.jpg))
 
 🔥 다섯가지의 도구를 만들었다 🔥
 
