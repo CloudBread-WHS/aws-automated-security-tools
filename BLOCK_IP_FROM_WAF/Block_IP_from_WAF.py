@@ -1,4 +1,3 @@
-
 import json
 import base64
 import boto3
@@ -108,20 +107,20 @@ def verify_nacl_and_db_consistency(nacl_client, dynamodb_client, network_acl_id,
     
 
 def lambda_handler(event, context):
-    try:
+    # try:
         # DynamoDB 테이블 설정
-        dynamodb_table_name = 'TABLE-NAME' #dynamodb 테이블 이름
+        dynamodb_table_name = 'NACL-INBOUND'
         dynamodb_client = boto3.resource('dynamodb')
         table = dynamodb_client.Table(dynamodb_table_name)
 
         # NACL 관리
         nacl_client = boto3.client('ec2')
-        network_acl_id = 'NACL ID'  # 실제 NACL ID로 교체
+        network_acl_id = 'acl-0d61c2ac40440e166'  # 실제 NACL ID로 교체
     
-    except Exception as e:
-        logger.error(f"예외 발생 DynamoDB, NACL: {str(e)}")
-        output_records = [{'recordId': record['recordId'], 'result': 'ProcessingFailed', 'data': record['data']} for record in event['records']]  # 수정된 부분
-        return {'records': output_records}
+    # except Exception as e:
+    #     logger.error(f"예외 발생 DynamoDB, NACL: {str(e)}")
+    #     output_records = [{'recordId': record['recordId'], 'result': 'ProcessingFailed', 'data': record['data']} for record in event['records']]  # 수정된 부분
+    #     return {'records': output_records}
         
     try_ips=[]
     # 공격자 IP 주소 가져오기
@@ -165,6 +164,7 @@ def lambda_handler(event, context):
                 TableName=dynamodb_table_name,
                 ProjectionExpression='#nacl, #timestamp, #egress, #attacker_ip',
                 ExpressionAttributeNames={'#nacl': 'nacl', '#timestamp': 'timestamp', '#egress': 'egress', '#attacker_ip': 'attacker_ip'},
+                FilterExpression=Attr('timestamp').gte(2),
                 Limit=20
             )
             if 'Items' in oldest_policies and oldest_policies['Items']:
