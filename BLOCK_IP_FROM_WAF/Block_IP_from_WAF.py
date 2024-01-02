@@ -110,7 +110,7 @@ def verify_nacl_and_db_consistency(nacl_client, dynamodb_client, network_acl_id,
 def lambda_handler(event, context):
     try:
         # DynamoDB 테이블 설정
-        dynamodb_table_name = 'NACL-TIME'
+        dynamodb_table_name = 'NACL-INBOUND'
         dynamodb_client = boto3.resource('dynamodb')
         table = dynamodb_client.Table(dynamodb_table_name)
 
