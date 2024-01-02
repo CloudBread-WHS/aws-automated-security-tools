@@ -1,0 +1,46 @@
+{
+  "source": ["aws.guardduty"],
+  "detail-type": ["GuardDuty Finding"],
+  "detail": {
+    "type": [
+      "Recon:EC2/Portscan",
+      "Policy:Kubernetes/AdminAccessToDefaultServiceAccount",
+      "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS",
+      "CredentialAccess:RDS/TorIPCaller.SuccessfulLogin",
+      "Exfiltration:S3/MaliciousIPCaller",
+      "Exfiltration:IAMUser/AnomalousBehavior",
+      "Discovery:S3/MaliciousIPCaller.Custom",
+      "Persistence:Kubernetes/MaliciousIPCaller.Custom",
+      "Backdoor:EC2/DenialOfService.Udp",
+      "CryptoCurrency:Runtime/BitcoinTool.B",
+      "CredentialAccess:Kubernetes/TorIPCaller",
+      "Discovery:S3/MaliciousIPCaller",
+      "Impact:S3/MaliciousIPCaller",
+      "Impact:Kubernetes/MaliciousIPCaller",
+      "CredentialAccess:Kubernetes/MaliciousIPCaller.Custom",
+      "Persistence:Kubernetes/TorIPCaller",
+      "DefenseEvasion:Kubernetes/TorIPCaller",
+      "CredentialAccess:Kubernetes/MaliciousIPCaller",
+      "UnauthorizedAccess:EC2/TorRelay",
+      "Backdoor:EC2/DenialOfService.Tcp",
+      "Persistence:Kubernetes/MaliciousIPCaller",
+      "Impact:Kubernetes/SuccessfulAnonymousAccess",
+      "CredentialAccess:RDS/AnomalousBehavior.SuccessfulLogin",
+      "CredentialAccess:RDS/AnomalousBehavior.FailedLogin",
+      "DefenseEvasion:Kubernetes/MaliciousIPCaller.Custom",
+      "UnauthorizedAccess:S3/TorIPCaller",
+      "CredentialAccess:RDS/MaliciousIPCaller.SuccessfulLogin",
+      "UnauthorizedAccess:Lambda/TorRelay",
+      "DefenseEvasion:Kubernetes/MaliciousIPCaller",
+      "UnauthorizedAccess:S3/MaliciousIPCaller.Custom",
+      "Impact:Kubernetes/MaliciousIPCaller.Custom",
+      "Impact:Kubernetes/TorIPCaller",
+      "Impact:EC2/PortSweep",
+      "Backdoor:EC2/DenialOfService.UnusualProtocol",
+      "UnauthorizedAccess:Lambda/TorClient",
+      "UnauthorizedAccess:EC2/TorClient",
+      "Impact:S3/AnomalousBehavior.Permission"
+
+    ]
+  }
+}
