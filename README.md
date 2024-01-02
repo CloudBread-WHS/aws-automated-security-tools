@@ -1,7 +1,7 @@
 # aws-automated-security-tools
 
 🔥다섯가지의 도구를 만들었다🔥
-1. WAF 기반 inbound/outbound NACL을 차단할 수 있는 도구
+1. WAF 기반 inbound NACL을 차단할 수 있는 도구
 2. Guardduty 기반 inbound/outbound NACL을 차단할 수 있는 도구
 3. Guardduty 기반 iam 롤 세션 초기화 하는 도구
 4. cloudtrail 비활성화시 강제 활성 도구
