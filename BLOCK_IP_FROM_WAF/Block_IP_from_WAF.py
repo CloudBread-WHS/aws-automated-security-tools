@@ -110,13 +110,13 @@ def verify_nacl_and_db_consistency(nacl_client, dynamodb_client, network_acl_id,
 def lambda_handler(event, context):
     try:
         # DynamoDB 테이블 설정
-        dynamodb_table_name = 'NACL-INBOUND'
+        dynamodb_table_name = 'TABLE-NAME' #dynamodb 테이블 이름
         dynamodb_client = boto3.resource('dynamodb')
         table = dynamodb_client.Table(dynamodb_table_name)
 
         # NACL 관리
         nacl_client = boto3.client('ec2')
-        network_acl_id = 'acl-0d61c2ac40440e166'  # 실제 NACL ID로 교체
+        network_acl_id = 'NACL ID'  # 실제 NACL ID로 교체
     
     except Exception as e:
         logger.error(f"예외 발생 DynamoDB, NACL: {str(e)}")
