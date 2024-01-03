@@ -16,6 +16,7 @@ CloudTrail 비활성화시 강제 활성 도구
 Discord를 통한 알림 기능 설정
 
 설명: Discord를 통해 각 도구의 알림을 설정할 수 있습니다.
+
 ➕ 추후 추가 기능
 
 Access Log 기반 WAF 룰 자동 업데이트 도구
