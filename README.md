@@ -1,12 +1,8 @@
-
-설명: VPC 흐름 로그를 분석하여 DoS 공격을 탐지하고 EC2 인스턴스를 중지시킵니다.  
- 이거 좀 가독성좋게 꾸며줘
-ChatGPT
 🔒 AWS Automated Security Tools Suite 🔒
 
 1. WAF 기반 Inbound NACL 차단 도구
 
-설명: WAF를 기반으로 Inbound NACL을 차단하여 보안을 강화합니다.
+설명: WAF를 활용하여 Inbound NACL을 차단하여 보안을 강화합니다.
 2. GuardDuty 기반 Inbound/Outbound NACL 차단 도구
 
 설명: GuardDuty 결과를 기반으로 Inbound/Outbound NACL을 차단하여 보안을 강화합니다.
@@ -27,3 +23,9 @@ ChatGPT
 7. VPC 흐름 로그를 통한 EC2 인스턴스 DoS 감지 및 중지 도구
 
 설명: VPC 흐름 로그를 분석하여 DoS 공격을 탐지하고, 자동으로 EC2 인스턴스를 중지시킵니다.
+✨ 보안 강화를 위한 자동화된 도구 모음 ✨
+
+
+
+
+User
