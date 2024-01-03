@@ -1,3 +1,4 @@
+
 🔒 AWS Automated Security Tools Suite 🔒
 
 1. WAF 기반 Inbound NACL 차단 도구
@@ -23,9 +24,3 @@
 7. VPC 흐름 로그를 통한 EC2 인스턴스 DoS 감지 및 중지 도구
 
 설명: VPC 흐름 로그를 분석하여 DoS 공격을 탐지하고, 자동으로 EC2 인스턴스를 중지시킵니다.
-✨ 보안 강화를 위한 자동화된 도구 모음 ✨
-
-
-
-
-User
