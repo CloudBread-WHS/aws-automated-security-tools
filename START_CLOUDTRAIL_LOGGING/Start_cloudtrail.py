@@ -32,6 +32,7 @@ def enable_cloudtrail_logging():
     
 function_name = 'Discord-bot_send'
 region_name = 'ap-northeast-2'  # 서울 리전 코드
+input_data = 'IMDS-IAM'
 
 # AWS Lambda 클라이언트를 생성합니다.
 lambda_client = boto3.client('lambda', region_name=region_name)
@@ -40,6 +41,7 @@ lambda_client = boto3.client('lambda', region_name=region_name)
 response = lambda_client.invoke(
     FunctionName=function_name,
     InvocationType='RequestResponse',  # 또는 'Event'로 설정하여 비동기적으로 호출할 수 있습니다.
+    Payload=json.dumps({"content" : "START_CLOUDTRAIL_LOGGING 함수 동작 "}),
     LogType='Tail'  # Lambda 로그를 확인하려면 'Tail'을 선택합니다.
 )
 
