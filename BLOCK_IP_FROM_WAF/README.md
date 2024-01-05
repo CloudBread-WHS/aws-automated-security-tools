@@ -1,11 +1,11 @@
 ## Block_IP_from_WAF.py
 해당 코드는 WAF의 웹 ACL이 트리거된 로그를 기반으로 특정 임계치를 넘으면 NACL inbound를 이용해 차단하는 람다 코드 입니다.
 
-## 서비스 구조
-![Block_IP_from_WAF](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/70023722/53f14359-7efe-43cd-9f90-063d3f486e2f)
-
 ## 필요성
 - 저비용으로 공격에 대한 빠른 대처 가능
+
+## 서비스 구조
+![Block_IP_from_WAF](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/70023722/53f14359-7efe-43cd-9f90-063d3f486e2f)
 
 ## 작동 과정
 1. WAF에서 룰 트리거되면 Firehose를 통해 묶어서 람다로 전달
