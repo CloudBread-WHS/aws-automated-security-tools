@@ -1,6 +1,7 @@
 이벤트 브릿지에서 Guardduty 결과를 탐지하면 Lambda 코드에서 공격자 ip를 자동으로 NACL에 차단 정책을 추가하는 코드입니다.
 
-## Lambda 함수 작동 과정
+## 작동 과정
+1. guardduty 결과가 나타면 EventBridge에서 Lambda 함수를 실행
 1. NACL과 DB정보 가져오기
 2. NACL에 있고 DB에 없다면 DB 추가, NACL에 없고 DB에 있다면 DB제거 (관리가 편해짐)
 3. NACL 정책이 20개라면 DB에서 가장 오래된 정책을 찾아서 제거
