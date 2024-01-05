@@ -23,9 +23,9 @@ def lambda_handler(event, context):
     }
 
 def enable_cloudtrail_logging():
-    cloudtrail_client = boto3.client('cloudtrail') #boto3 를 이용하여 cloudtrail 과 통신할 객체 생성.
+    cloudtrail_client = boto3.client('cloudtrail')
     response = cloudtrail_client.start_logging(
-        Name='arn:aws:cloudtrail:ap-northeast-2:822542735138:trail/S3cloudbread'
+        Name='서비스에서 로깅을 수행하고 있는 Cloudtrail arn 입력'
     )
 
     print("CloudTrail logging is re-enabled.")
