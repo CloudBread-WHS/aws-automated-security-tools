@@ -2,7 +2,7 @@ EXPIRES_IAM_SESSION_GUARDUTYD.py
 - 해당 코드는 GuardDuty 기반 보안이벤트를 통해 임시 자격 증명을 탈취하여 악용하는 이벤트 감지시 해당 IAM 권한 박탈시키는 행동을 수행하는 람다 함수입니다.
 
 ## 발생 시나리오 및 대응
-![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/125464850/f1d698e1-bff7-4649-ac74-a5e343c43a7c)
+<img width="80%" src="https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/125464850/"/>
 1. 악의적인 사용자가 웹 취약점을 이용하여 iam 자격 증명을 탈취함.
 2. GuardDuty를 이용하여 IMDS 이상호출 이벤트 감지.
 3. 해당 이벤트를 EventBridge를 통해 람다함수로 전달.
