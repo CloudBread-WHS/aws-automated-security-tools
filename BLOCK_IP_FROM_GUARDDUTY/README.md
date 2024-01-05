@@ -38,6 +38,7 @@ AWS Lambda - 함수 - 함수 생성
 
 다시 Labmda 함수로 돌아와서 Layers를 누르고 계층 추가한다.
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/f6bc5e7e-a849-4b07-aea5-87c4ca4d9403)
+
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/abe18587-3092-4417-8ebb-6ada73bc2181)
 
 사용자 지정 계층을 선책하고 아까 추가한 boto3와 datetime 패키지를 추가한다.
@@ -49,6 +50,7 @@ Lambda 함수는 이렇게 준비가 끝났다.
 오래된 정책 삭제를 위해 정책 내용과 시간이 담긴 DB를 만들어야 한다.
 DynamoDB - 대시보드 - 테이블 생성
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/b54fbfe4-93af-454a-86bc-373d16db06a2)
+
 테이블 이름에는 Lambda 함수에 입력했던 테이블 이름을 입력하고 파티션 키에는 nacl을 입력한다. 그리고 테이블을 생성하면 DynamoDB의 설정은 끝이다.
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/978d3068-c0d7-4830-9f90-942008b629f3)
 
