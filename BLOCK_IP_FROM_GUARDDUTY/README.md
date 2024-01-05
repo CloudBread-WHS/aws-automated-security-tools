@@ -53,6 +53,7 @@ DynamoDB - 대시보드 - 테이블 생성
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/b54fbfe4-93af-454a-86bc-373d16db06a2)
 
 테이블 이름에는 Lambda 함수에 입력했던 테이블 이름을 입력하고 파티션 키에는 nacl을 입력한다. 그리고 테이블을 생성하면 DynamoDB의 설정은 끝이다.
+
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/978d3068-c0d7-4830-9f90-942008b629f3)
 
 ## EventBridge 설정
