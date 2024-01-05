@@ -36,6 +36,7 @@ AWS Lambda - 함수 - 함수 생성
 
 패키지 파일을 업로드하고 호환 런타임에는 Python 3.11을 선택 후 생성한다. boto3와 datetime 2가지를 모두 진행한다.
 업로드 파일은 Layers 폴더 안에 있다.
+
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/689f2cee-4170-4e06-877c-268e62b0fe0d)
 
 다시 Labmda 함수로 돌아와서 Layers를 누르고 계층 추가한다.
