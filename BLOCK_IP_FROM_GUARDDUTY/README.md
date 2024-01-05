@@ -18,6 +18,7 @@ AWS Lambda - 함수 - 함수 생성
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/f2670e0a-54e7-4f4a-bd11-669c926cfa25)
 
 함수를 생성하면 먼저 코드 소스에 코드를 입력한다.
+
 이 때 DynamoDB의 테이블 이름과 NACL ID는 사용자의 값으로 입력을 해야한다. DynamoDB는 Lambda 함수 생성 이후에 설정한기 때문에 지금은 이름만 입력한다.
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/6c415e3f-1aec-4416-9902-7473bc69e299)
 
@@ -35,6 +36,7 @@ AWS Lambda - 함수 - 함수 생성
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/8dfc099a-dc75-409d-853c-42749d99e30c)
 
 패키지 파일을 업로드하고 호환 런타임에는 Python 3.11을 선택 후 생성한다. boto3와 datetime 2가지를 모두 진행한다.
+
 업로드 파일은 Layers 폴더 안에 있다.
 
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/689f2cee-4170-4e06-877c-268e62b0fe0d)
@@ -50,14 +52,19 @@ AWS Lambda - 함수 - 함수 생성
 
 Lambda 함수는 이렇게 준비가 끝났다.
 
+
+
 ## DynamoDB 설정
 오래된 정책 삭제를 위해 정책 내용과 시간이 담긴 DB를 만들어야 한다.
+
 DynamoDB - 대시보드 - 테이블 생성
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/b54fbfe4-93af-454a-86bc-373d16db06a2)
 
 테이블 이름에는 Lambda 함수에 입력했던 테이블 이름을 입력하고 파티션 키에는 nacl을 입력한다. 그리고 테이블을 생성하면 DynamoDB의 설정은 끝이다.
 
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/978d3068-c0d7-4830-9f90-942008b629f3)
+
+
 
 ## EventBridge 설정
 Amazon Eventbridge - 버스 - 규칙 - 규칙생성
@@ -67,13 +74,16 @@ Amazon Eventbridge - 버스 - 규칙 - 규칙생성
 ![2](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/7942d199-06f3-49fa-91a8-9229cc729688)
 
 이벤트 소스 작성의 이벤트 소스에는 "AWS 이벤트 또는 EventBridge 파트너 이벤트 선택"
+
 나머지는 그대로 유지하고 이벤트 패턴에서 패턴 편집을 누르고 자동대응 할 guardduty finding type json 입력
+
 (eventbridge-in/outbound.json는 예시일 뿐 사용자가 원하는 방법으로 사용해야 한다.)
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/930fa888-59fd-4207-bbe5-11b243b94fb2)
 
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/4bc1b8d9-6c6a-4431-aea6-affbf17cdebf)
 
 자동화 하고싶은 guardduty 결과들을 입력하고 다음으로 이동한다
+
 결과 유형 참고(https://docs.aws.amazon.com/ko_kr/guardduty/latest/ug/guardduty_finding-types-active.html)
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/e7a346c5-2ed6-42ab-8495-83a96b381d24)
 
@@ -81,5 +91,7 @@ Amazon Eventbridge - 버스 - 규칙 - 규칙생성
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/fe4f820d-17ec-41e2-9537-fd655b2834c3)
 
 필요에 따라 태그를 설정 해 줄 수 있지만 여기선 생략한다.
+
 다음으로 이동하고 규칙 생성을 눌러준다.
+
 그러면 내가 자동화 하고싶은 guardduty 결과가 발생할 때 lambda 함수가 동작하여 자동으로 차단을 진행한다.
