@@ -37,6 +37,7 @@ AWS Lambda - 함수 - 함수 생성
 ![제목 ssss없음](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/689f2cee-4170-4e06-877c-268e62b0fe0d)
 
 다시 Labmda 함수로 돌아와서 Layers를 누르고 계층 추가한다.
+
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/f6bc5e7e-a849-4b07-aea5-87c4ca4d9403)
 
 ![image](https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/51049963/abe18587-3092-4417-8ebb-6ada73bc2181)
