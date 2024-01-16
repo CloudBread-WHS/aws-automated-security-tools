@@ -3,7 +3,9 @@
 <img width="70%" src="https://github.com/CloudBread-WHS/aws-automated-security-tools/blob/main/aws_infra.png"/>
 
 ---
-위 인프라를 기준으로 여러 aws 서비스를 이용하여 자동으로 탐지, 초기침해대응을 하는 도구를 만드는 프로젝트이다.
+###위 인프라를 기준으로 여러 aws 서비스를 이용하여 자동으로 탐지, 초기침해대응을 하는 도구를 만드는 프로젝트이다.
+
+
 
 🔒 **AWS Automated Security Tools Suite** 🔒
 
@@ -25,7 +27,7 @@
 **4. CloudTrail 비활성화시 강제 활성 도구**
 
 - *설명:* CloudTrail이 비활성화되었을 때, 강제로 활성화하여 로깅을 지속적으로 유지합니다.
-- [START_CLOUDTRAIL_LOGGING]()
+- [START_CLOUDTRAIL_LOGGING](https://github.com/CloudBread-WHS/aws-automated-security-tools/tree/main/START_CLOUDTRAIL_LOGGING)
 
 **5. Discord를 통한 알림 기능 설정**
 
