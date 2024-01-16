@@ -32,4 +32,4 @@
 
 ## AWS 인프라 구성
 
-<img width="70%" src="[https://github.com/CloudBread-WHS/aws-automated-security-tools/aws_infra.png](https://github.com/CloudBread-WHS/aws-automated-security-tools/blob/main/aws_infra.png)https://github.com/CloudBread-WHS/aws-automated-security-tools/blob/main/aws_infra.png"/>
+<img width="70%" src="https://github.com/CloudBread-WHS/aws-automated-security-tools/blob/main/aws_infra.png"/>
