@@ -20,7 +20,7 @@
 **3. GuardDuty 기반 IAM 롤 세션 초기화 도구**
 
 - *설명:* GuardDuty 결과를 활용하여 IAM 롤 세션을 초기화하여 보안을 강화합니다.
-- [EXPIRES_IAM_SESSION_GUARDDUTY]()
+- [EXPIRES_IAM_SESSION_GUARDDUTY](https://github.com/CloudBread-WHS/aws-automated-security-tools/tree/main/EXPIRES_IAM_SESSION_GUARDDUTY)
 
 **4. CloudTrail 비활성화시 강제 활성 도구**
 
