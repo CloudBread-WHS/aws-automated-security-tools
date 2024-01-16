@@ -1,3 +1,10 @@
+# AWS 인프라 구성
+
+<img width="70%" src="https://github.com/CloudBread-WHS/aws-automated-security-tools/blob/main/aws_infra.png"/>
+
+---
+위 인프라를 기준으로 여러 aws 서비스를 이용하여 자동으로 탐지, 초기침해대응을 하는 도구를 만드는 프로젝트이다.
+
 🔒 **AWS Automated Security Tools Suite** 🔒
 
 **1. WAF 기반 Inbound NACL 차단 도구**
@@ -29,7 +36,3 @@
 **7. VPC 흐름 로그를 통한 EC2 인스턴스 DoS 감지 및 중지 도구**
 
 - *설명:* VPC 흐름 로그를 분석하여 DoS 공격을 탐지하고, 자동으로 EC2 인스턴스를 중지시킵니다.
-
-## AWS 인프라 구성
-
-<img width="70%" src="https://github.com/CloudBread-WHS/aws-automated-security-tools/blob/main/aws_infra.png"/>
