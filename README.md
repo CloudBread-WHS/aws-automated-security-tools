@@ -30,7 +30,7 @@
 **5. Discord를 통한 알림 기능 설정**
 
 - *설명:* 각 도구의 알림을 Discord를 통해 설정할 수 있습니다.
-- [SEND_DISCODE_SECURITY_ALAM]()
+- [SEND_DISCODE_SECURITY_ALAM](https://github.com/CloudBread-WHS/aws-automated-security-tools/tree/main/SEND_DISCORD_SECURITY_ALARM)
 
   
 
