@@ -10,7 +10,7 @@
 **1. WAF 기반 Inbound NACL 차단 도구**
 
 - *설명:* WAF를 활용하여 Inbound NACL을 차단하여 보안을 강화합니다.
-- [BLOCK_IP_FROM_GUARDDUTY]()
+- [BLOCK_IP_FROM_GUARDDUTY](https://github.com/CloudBread-WHS/aws-automated-security-tools/tree/main/BLOCK_IP_FROM_GUARDDUTY)
 
 **2. GuardDuty 기반 Inbound/Outbound NACL 차단 도구**
 
