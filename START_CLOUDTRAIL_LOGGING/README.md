@@ -1,5 +1,7 @@
 🧑🏻‍💻 Start_cloudtrail.py
-<img width="30%" src=" "/>
+<img width="438" alt="cloudTrail" src="https://github.com/CloudBread-WHS/aws-automated-security-tools/assets/77061306/47bcabef-a496-48a3-ae13-fc2e0487b33d">
+
+
 - 해당 코드는 cloudtrail 로깅이 비활성화되었을 때, 다시 활성화 시키는 행동을 수행하는 람다 함수입니다.
 
 ## 발생 시나리오 및 대응
