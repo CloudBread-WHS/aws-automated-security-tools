@@ -31,8 +31,5 @@
 - *설명:* VPC 흐름 로그를 분석하여 DoS 공격을 탐지하고, 자동으로 EC2 인스턴스를 중지시킵니다.
 
 ## AWS 인프라 구성
-1. VPC
-   - 서브넷 생성
-   - NAT Gateway 생성
-2. EC2
-   - 간단한 웹 서비스 생성 (취약점 존재)
+
+<img width="30%" src="https://github.com/CloudBread-WHS/aws-automated-security-tools/aws_infra.png"/>
